@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "attio-mcp": {
+      "command": "node",
+      "args": ["/Users/abel/Development/attio-mcp-server/dist/cli.js"],
+      "env": {
+        "ATTIO_API_KEY": "${ATTIO_API_KEY}",
+        "ATTIO_WORKSPACE_ID": "${ATTIO_WORKSPACE_ID}"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.notion.com/mcp"]
+    }
+  }
+}

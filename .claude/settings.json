@@ -9,7 +9,8 @@
       "Grep",
       "WebSearch",
       "WebFetch",
-      "mcp__attio-mcp"
+      "mcp__attio-mcp",
+      "mcp__notion"
     ],
     "deny": [],
     "ask": []

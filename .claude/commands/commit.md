@@ -8,9 +8,5 @@ Commit all current changes to git with a concise commit message.
    <type>: <short summary>
 
    <1-2 sentence description of what changed>
-
-   🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-   Co-Authored-By: Claude <noreply@anthropic.com>
    ```
 5. Use conventional commit types: feat, fix, docs, chore, refactor

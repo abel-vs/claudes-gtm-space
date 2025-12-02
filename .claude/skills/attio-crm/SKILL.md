@@ -69,6 +69,25 @@ The `records_search_by_relationship` tool with `people_to_company` relationship 
 - Search for the company separately using `records_search`
 - Use the company record's direct fields instead of relationship traversal
 
+### 5. Never Use add-record-to-list for Status Updates
+
+When moving a record to a different status in a list, **never use `add-record-to-list`** if the record is already in the list. This will create a duplicate entry instead of updating the existing one.
+
+**Correct Approach:**
+1. First find the existing entry using `get-list-entries` and filter by `parent_record_id`
+2. Then use `update-list-entry` with the entry ID and new status
+
+**Example:**
+```javascript
+// WRONG - creates duplicate entry
+await add_record_to_list(listId, recordId, {outreach_status: "Archived"});
+
+// CORRECT - updates existing entry
+const entries = await get_list_entries(listId);
+const entry = entries.find(e => e.parent_record_id === recordId);
+await update_list_entry(listId, entry.entry_id, {outreach_status: "Archived"});
+```
+
 ## Common Workflows
 
 ### Creating a New Contact

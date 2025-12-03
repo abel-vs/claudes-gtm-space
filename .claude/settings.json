@@ -10,7 +10,8 @@
       "WebSearch",
       "WebFetch",
       "mcp__attio-mcp",
-      "mcp__notion"
+      "mcp__notion",
+      "mcp__surfe"
     ],
     "deny": [],
     "ask": []

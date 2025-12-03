@@ -2,7 +2,7 @@
   "mcpServers": {
     "attio-mcp": {
       "command": "node",
-      "args": ["/Users/abel/Development/attio-mcp-server/dist/cli.js"],
+      "args": ["/Users/abel/Development/Macadamia Labs/GTM/attio-mcp-server/dist/cli.js"],
       "env": {
         "ATTIO_API_KEY": "${ATTIO_API_KEY}",
         "ATTIO_WORKSPACE_ID": "${ATTIO_WORKSPACE_ID}"
@@ -11,6 +11,13 @@
     "notion": {
       "command": "npx",
       "args": ["-y", "mcp-remote", "https://mcp.notion.com/mcp"]
+    },
+    "surfe": {
+      "command": "node",
+      "args": ["/Users/abel/Development/Macadamia Labs/GTM/surfe-mcp/dist/index.js"],
+      "env": {
+        "SURFE_API_KEY": "${SURFE_API_KEY}"
+      }
     }
   }
 }

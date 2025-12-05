@@ -18,6 +18,13 @@
       "env": {
         "SURFE_API_KEY": "${SURFE_API_KEY}"
       }
+    },
+    "nano-banana-pro": {
+      "command": "node",
+      "args": ["/Users/abel/Development/nano-banana-pro-mcp/dist/index.js"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      }
     }
   }
 }

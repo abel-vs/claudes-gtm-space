@@ -1,17 +1,8 @@
 {
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
-      "Bash",
-      "Read",
-      "Write",
-      "Edit",
-      "Glob",
-      "Grep",
-      "WebSearch",
-      "WebFetch",
-      "mcp__attio-mcp",
-      "mcp__notion",
-      "mcp__surfe"
+      "*"
     ],
     "deny": [],
     "ask": []

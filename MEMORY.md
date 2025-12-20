@@ -25,3 +25,20 @@ The following have been archived from Notion (managed in Attio instead):
 - Sales Pipeline
 - Sales Meetings
 - Prospecting (as a database)
+
+## MCP Tool Access Limitations
+
+### MCP Tools Not Directly Callable in Main Agent Context
+
+**Issue:** MCP tools (mcp__attio-mcp, mcp__notion, mcp__surfe) are listed in settings.json permissions but are not directly accessible as function calls in the main agent conversation context.
+
+**Attempted:**
+- Calling mcp__attio-mcp, mcp__surfe directly as tools
+- Using Bash to invoke MCP commands
+
+**Workaround:**
+- MCP tools may only be accessible within skill contexts (which require prompts and separate execution)
+- For research tasks requiring MCP integration, use web search to gather data, then provide structured output for manual import
+- Alternative: Skills may need to be invoked if they support MCP access
+
+**Date:** 2025-12-16

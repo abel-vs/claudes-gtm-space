@@ -25,6 +25,13 @@
       "env": {
         "GEMINI_API_KEY": "${GEMINI_API_KEY}"
       }
+    },
+    "happenstance": {
+      "command": "node",
+      "args": ["/Users/abel/Development/Macadamia Labs/GTM/happenstance-mcp-server/dist/index.js"],
+      "env": {
+        "HAPPENSTANCE_API_KEY": "${HAPPENSTANCE_API_KEY}"
+      }
     }
   }
 }

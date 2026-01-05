@@ -4,4 +4,8 @@
 
 .DS_Store
 
-reports/
+reports/conversations/
+learnings/
+.obsidian/
+.DS_Store
+Icon

@@ -1,5 +1,20 @@
 # Claude Code Instructions
 
+## Response Formatting (Slack/Email)
+
+When responding via Slack or Email, your **final message** is what gets sent to me. Structure it as a clean, conversational response:
+
+- **Don't repeat your thinking process** - I only see the final message, not your tool calls or reasoning
+- **Be direct** - Start with the answer/result, not "I'll do X" or "Let me check Y"
+- **Summarize outcomes** - If you created something (Linear issue, calendar event, etc.), give me the key details
+- **Keep it conversational** - Write like you're chatting with me, not documenting your process
+
+**Good example:**
+> ✅ Created Linear issue GTM-66: "Set up Snitcher n8n workflow" - it's in your backlog ready to go!
+
+**Bad example:**
+> I'll create a Linear issue. Let me get the team ID first... [tool output] ... Now creating the issue... [more output] ... Done! I created GTM-66.
+
 ## On Session Start
 
 Always first check MEMORY.md at the start of each session to review past errors, learnings, and workarounds to prevent repeating mistakes.

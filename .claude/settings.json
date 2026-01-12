@@ -8,9 +8,8 @@
     "ask": []
   },
   "enabledPlugins": {
-    ".claude/skills/notion-gtm": true,
-    ".claude/skills/surfe-prospecting": true,
-    ".claude/skills/cro": true,
-    ".claude/skills/attio-skill": true
+    "notion-plugin@macadamia": true,
+    "attio-plugin@macadamia": true,
+    "linear-plugin@macadamia": true
   }
 }

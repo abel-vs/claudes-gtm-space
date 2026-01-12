@@ -10,6 +10,8 @@
   "enabledPlugins": {
     "notion-plugin@macadamia": true,
     "attio-plugin@macadamia": true,
-    "linear-plugin@macadamia": true
+    "linear-plugin@macadamia": true,
+    "google-calendar-plugin@macadamia": true,
+    "gmail-plugin@macadamia": true
   }
 }
